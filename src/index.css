@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-2 {
+  grid-template-columns: 1fr 4fr;
+}
+
+.text-column {
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+@layer components {
+  .search {
+    filter: blur(20px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hamburger-menu {
+    display: none !important;
+  }
+}
